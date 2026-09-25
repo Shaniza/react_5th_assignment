@@ -1,0 +1,181 @@
+
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 42px;
+  background: #ffffff;
+  border-bottom: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #596273;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+  color: #ff3d81;
+}
+
+.nav-menu a.active {
+  color: #ff3d81;
+}
+
+
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sign-in {
+  text-decoration: none;
+  color: #596273;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.sign-in:hover {
+  color: #ff3d81;
+}
+
+
+
+
+.sign-up {
+  border: none;
+  padding: 9px 18px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    #ff3d81,
+    #7c3aed
+  );
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.sign-up:hover {
+  transform: translateY(-1px);
+}
+
+
+
+
+.hamburger-btn {
+  display: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger-btn img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+
+  .nav-menu {
+    display: none;
+  }
+
+
+  .sign-in {
+    display: none;
+  }
+
+ 
+  .sign-up {
+    display: none;
+  }
+
+ 
+  .hamburger-btn {
+    display: block;
+  }
+
+
+  .nav-menu.mobile-open {
+    display: flex;
+
+    position: absolute;
+
+   
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px 0;
+
+    background: white;
+
+    border-bottom: 1px solid #f1f1f1;
+
+    z-index: 1000;
+
+    
+    transform: none;
+  }
+
+  .nav-menu.mobile-open a {
+    font-size: 18px;
+  }
+}
