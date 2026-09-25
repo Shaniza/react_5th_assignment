@@ -1,0 +1,219 @@
+.technology-card {
+  min-width: 0;
+  min-height: 260px;
+  padding: 20px;
+  border: 1px solid #e8ebf1;
+  border-radius: 12px;
+  background: #ffffff;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.technology-card:hover {
+  border-color: #d9dde7;
+  box-shadow: 0 6px 18px rgba(20, 30, 50, 0.07);
+}
+
+ 
+
+.technology-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+ 
+
+.technology-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.technology-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+
+
+.technology-badge {
+  padding: 6px 11px;
+  border-radius: 13px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+
+.badge-popular {
+  color: #38a7c7;
+  background: #e9f9fc;
+}
+
+.badge-versatile {
+  color: #31a66b;
+  background: #eaf9f1;
+}
+
+.badge-fast {
+  color: #f08b36;
+  background: #fff2e8;
+}
+
+.badge-modern {
+  color: #43a9c9;
+  background: #e9f8fc;
+}
+
+.badge-standard {
+  color: #38aa72;
+  background: #eaf9f0;
+}
+
+.badge-topSql {
+  color: #5689db;
+  background: #edf3ff;
+}
+
+.badge-cache {
+  color: #e75c56;
+  background: #fff0ef;
+}
+
+.badge-ubiquitous {
+  color: #dca71b;
+  background: #fff8df;
+}
+
+.badge-essential {
+  color: #3998c9;
+  background: #e9f7fd;
+}
+
+.badge-robust {
+  color: #4ba7d3;
+  background: #edf8fc;
+}
+
+.badge-containers {
+  color: #299bd6;
+  background: #eaf7ff;
+}
+
+ 
+.technology-card h3 {
+  margin: 0 0 10px;
+  color: #182033;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+ 
+
+.technology-description {
+  min-height: 72px;
+  margin: 0 0 16px;
+  color: #6f7888;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+ 
+
+.technology-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #7f8999;
+  font-size: 12px;
+}
+
+.technology-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #596273;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.technology-rating svg {
+  width: 14px;
+  height: 14px;
+  color: #f5b82e;
+}
+
+ 
+
+.add-stack-btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-stack-btn:hover {
+  background: #252d3d;
+}
+
+ 
+
+.add-stack-btn.added-stack-btn {
+  background: #fce7f3;
+  color: #d62f82;
+  border: 1px solid #f3a8ca;
+  cursor: default;
+  opacity: 1;
+}
+
+.add-stack-btn.added-stack-btn:hover {
+  background: #fce7f3;
+}
+
+
+@media (max-width: 650px) {
+  .technology-card {
+    padding: 18px;
+    min-height: 250px;
+  }
+
+  .technology-card h3 {
+    font-size: 19px;
+  }
+
+  .technology-description {
+    font-size: 13px;
+    min-height: 65px;
+  }
+
+  .technology-meta {
+    font-size: 11px;
+  }
+
+  .technology-rating {
+    font-size: 11px;
+  }
+
+  .technology-badge {
+    font-size: 11px;
+  }
+
+  .add-stack-btn {
+    font-size: 12px;
+    height: 38px;
+  }
+}
